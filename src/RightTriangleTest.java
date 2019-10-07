@@ -5,13 +5,11 @@ public class RightTriangleTest {
 //        return
 //
 //        boolean rightTriangle
-   public boolean isRightTriangle (Triangle triangle){
-       double calc = (Math.pow)
-
-               ((triangle.sideA*triangle.sideA)+(triangle.sideB*triangle.sideB)==(triangle.sideC*triangle.sideC));
-       boolen result ==
-       return calc ==;
-
+   public boolen isRightTriangle (Triangle triangle){
+       boolen isTrue = Math.pow(triangle.sideA,2)+Math.pow(triangle.sideB,2)==Math.pow(triangle.sideC,2)||
+               Math.pow(triangle.sideA,2)+ Math.pow(triangle.sideC,2)==Math.pow(triangle.sideB,2)||
+               Math.pow(triangle.sideC,2)+ Math.pow(triangle.sideB,2)==Math.pow(triangle.sideA,2);
+       return isTrue;
 
 
    }
